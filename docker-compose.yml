@@ -2,31 +2,37 @@ version: '2'
 
 services:
   radarr:
-    environment:
-      - PGID:1000
-      - PUID:1000
     image: linuxserver/radarr:latest
     container_name: radarr
     restart: always
     ports:
       - 7878:7878
     volumes:
-      - /etc/localtime:/etc/localtime:ro
       - ./radarr/config/:/config
       - /nfs/video/Movies:/movies
-      - /nfs/downloads/CompletedMovies:/downloads
+      - /nfs/downloads/sync-backup/radarr:/downloads
 
   sonarr:
-    environment:
-      - PGID:1000
-      - PUID:1000
     image: linuxserver/sonarr:latest
     container_name: sonarr
     restart: always
     ports:
       - 8989:8989
     volumes:
-      - /etc/localtime:/etc/localtime:ro
       - ./sonarr/config/:/config
       - /nfs/video/TV Shows:/tv
-      - /nfs/downloads/CompletedMovies:/downloads
+      - /nfs/downloads/sync-backup/sonarr:/downloads
+  jackett:
+    image: linuxserver/jackett:latest
+    container_name: jackett
+    ports:
+      - 9117:9117
+    volumes:
+      - ./jackett/config/:/config
+  sync:
+    image: nimmis/resilio-sync:latest
+    container_name: sync
+    volumes:
+      - /nfs/downloads/sync-backup:/data
+    ports:
+      - 33333:33333
