@@ -1,2 +1,4 @@
 nzbdrone*
 logs*
+radarr/config/MediaCover/
+.env
