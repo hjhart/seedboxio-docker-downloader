@@ -1,4 +1,5 @@
 nzbdrone*
-logs*
+log*
 radarr/config/MediaCover/
 .env
+jackett/config/Jackett/log.txt

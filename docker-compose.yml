@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   radarr:
@@ -9,8 +9,10 @@ services:
       - 7878:7878
     volumes:
       - ./radarr/config/:/config
-      - /nfs/video/Movies:/movies
-      - /nfs/downloads/sync-backup/radarr:/downloads
+      - ${MOVIE_DIR}:/movies
+      - ${STORAGE_DIR}/radarr:/downloads
+    env_file:
+      - .env
 
   sonarr:
     image: linuxserver/sonarr:latest
@@ -20,8 +22,10 @@ services:
       - 8989:8989
     volumes:
       - ./sonarr/config/:/config
-      - /nfs/video/TV Shows:/tv
-      - /nfs/downloads/sync-backup/sonarr:/downloads
+      - ${TV_SHOW_DIR}:/tv
+      - ${STORAGE_DIR}/sonarr:/downloads
+    env_file:
+      - .env
   jackett:
     image: linuxserver/jackett:latest
     container_name: jackett
@@ -29,10 +33,16 @@ services:
       - 9117:9117
     volumes:
       - ./jackett/config/:/config
+    env_file:
+      - .env
+
   sync:
     image: nimmis/resilio-sync:latest
     container_name: sync
     volumes:
-      - /nfs/downloads/sync-backup:/data
+      - ${STORAGE_DIR}:/data
     ports:
       - 33333:33333
+    user: "1000:1000"
+    env_file:
+      - .env
