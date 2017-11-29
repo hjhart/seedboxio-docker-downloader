@@ -2,26 +2,31 @@
 
 This docker set up allows you to set up a local dockerized Sonarr, Radarr, Jackett, and Resilio Sync, that will automatically hook up to your seedbox.io seedbox instance, straight out of the box. It even has an nginx reverse proxy sitting on port 80 to give you a front page to your media services.
 
+### Caveat:
+
+**Warning:** This whole README uses the same hostname, psv23232.seedbox.io. Anywhere you see that, change it to your seedbox.io hostname.
+
+
 # Installation
 
 Set your seedbox.io name as an environment variable.
 
 ```
-export SEEDHOST=psb18653.seedbox.io
+export SEEDHOST=psv23232.seedbox.io
 open https://$SEEDHOST/dav
 ```
 
-* Create a directory called "CompletedDownloads"
+* Create a directory called `CompletedDownloads`
 
 
 ```
 open https://$SEEDHOST
 ```
 
-* Click on the settings icon. Go to "Autotools". Make sure AutoMove is checked, if torrent's label matches filter /.*/ with the directory, /home/psb18653/files/CompletedDownloads. Also check the "Add torrent's label to path"
+* Click on the settings icon. Go to "Autotools". Make sure AutoMove is checked, if torrent's label matches filter /.*/ with the directory, /home/psv23232/files/CompletedDownloads. Also check the "Add torrent's label to path"
 ![rTorrent Settings](https://github.com/hjhart/docker-downloader/blob/master/assets/rtorrent_settings.png)
 
-Now go add that directory in resilio sync.
+Now go add the `CompletedDownloads` directory.
 
 ```
 open https://$SEEDHOST/resilio
@@ -46,7 +51,7 @@ While you're in the .env file, add in correct data for MOVIE_DIR, TV_SHOW_DIR, a
 
 ```
    host                               remote path                                        local path
-psb18653.seedbox.io       /home/psb18653/files/CompletedDownloads/radarr/              /downloads/radarr/
+psv23232.seedbox.io       /home/psv23232/files/CompletedDownloads/radarr/              /downloads/radarr/
 
 ```
 
@@ -58,9 +63,14 @@ psb18653.seedbox.io       /home/psb18653/files/CompletedDownloads/radarr/       
 
 ```
    host                               remote path                                        local path
-psb18653.seedbox.io       /home/psb18653/files/CompletedDownloads/sonarr/              /downloads/sonarr/
+psv23232.seedbox.io       /home/psv23232/files/CompletedDownloads/sonarr/              /downloads/sonarr/
 
 ```
+
+## Congratulations!
+
+Now you should be all set up. If you have any problems, leave an issue in github and I'll get back to you.
+
 
 TODO:
 
