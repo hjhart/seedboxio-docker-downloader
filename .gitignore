@@ -4,3 +4,4 @@ radarr/config/MediaCover/
 .env
 jackett/config/Jackett/log.txt
 .mono
+sonarr/config/MediaCover/
