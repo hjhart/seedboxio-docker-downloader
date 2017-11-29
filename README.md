@@ -19,7 +19,7 @@ open https://$SEEDHOST
 ```
 
 * Click on the settings icon. Go to "Autotools". Make sure AutoMove is checked, if torrent's label matches filter /.*/ with the directory, /home/psb18653/files/CompletedDownloads. Also check the "Add torrent's label to path"
-![rTorrent Settings](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![rTorrent Settings](https://github.com/hjhart/docker-downloader/blob/master/assets/rtorrent_settings.png)
 
 Now go add that directory in resilio sync.
 
