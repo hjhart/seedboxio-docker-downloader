@@ -1,7 +1,7 @@
 <Config>
   <LogLevel>Info</LogLevel>
   <Port>8989</Port>
-  <UrlBase></UrlBase>
+  <UrlBase>/sonarr</UrlBase>
   <BindAddress>*</BindAddress>
   <SslPort>9898</SslPort>
   <EnableSsl>False</EnableSsl>
