@@ -8,10 +8,18 @@ Set your seedbox.io name as an environment variable.
 
 ```
 export SEEDHOST=psb18653.seedbox.io
-open https://$SEEDHOST/
+open https://$SEEDHOST/dav
 ```
 
-* Make sure rTorrent has AutoMove set to a directory, CompletedDownloads, and checkbox for adding the label.
+* Create a directory called "CompletedDownloads"
+
+
+```
+open https://$SEEDHOST
+```
+
+* Click on the settings icon. Go to "Autotools". Make sure AutoMove is checked, if torrent's label matches filter /.*/ with the directory, /home/psb18653/files/CompletedDownloads. Also check the "Add torrent's label to path"
+![rTorrent Settings](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 Now go add that directory in resilio sync.
 
