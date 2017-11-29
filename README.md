@@ -44,7 +44,7 @@ While you're in the .env file, add in correct data for MOVIE_DIR, TV_SHOW_DIR, a
 
 ## Configure Radarr:
 
-* Add indexers that you want to add.
+* Add indexers that you want to add. (Jackett can be configured / found on port 9117)
 * Add rTorrent as a Download Client to point to your seedbox.io. [See this article](https://panel.seedbox.io/index.php?rp=/knowledgebase/41/How-to-connect-Sonarr-to-your-service.html)
 * Toggle "Advanced Settings" in the Download Client tab.
 * Add a new Remote Path Mapping like this:
@@ -57,7 +57,7 @@ psv23232.seedbox.io       /home/psv23232/files/CompletedDownloads/radarr/       
 
 ## Configure Sonarr: 
 
-* Add indexers that you want to add.
+* Add indexers that you want to add. (Jackett can be configured / found on port 9117)
 * Add rTorrent as a Download Client to point to your seedbox.io. [See this article](https://panel.seedbox.io/index.php?rp=/knowledgebase/41/How-to-connect-Sonarr-to-your-service.html)
 * Add a new Remote Path Mapping like this:
 
