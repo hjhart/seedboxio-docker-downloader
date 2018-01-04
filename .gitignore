@@ -5,3 +5,5 @@ radarr/config/MediaCover/
 jackett/config/Jackett/log.txt
 .mono
 sonarr/config/MediaCover/
+updater.txt
+Backups
