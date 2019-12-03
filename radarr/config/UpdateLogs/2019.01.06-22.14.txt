@@ -1,0 +1,942 @@
+19-1-6 22:14:26.4|Info|UpdateApp|Starting Radarr Update Client
+19-1-6 22:14:26.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+19-1-6 22:14:26.5|Debug|UpdateApp|NzbDrone process ID: 211
+19-1-6 22:14:26.5|Debug|UpdateApp|Arguments:
+19-1-6 22:14:26.5|Debug|UpdateApp|  211
+19-1-6 22:14:26.5|Debug|UpdateApp|  /tmp/radarr_update
+19-1-6 22:14:26.5|Debug|UpdateApp|  /opt/radarr/Radarr.exe
+19-1-6 22:14:26.5|Debug|UpdateApp|  /data=/config
+19-1-6 22:14:26.5|Debug|UpdateApp|  /nobrowser
+19-1-6 22:14:26.5|Debug|UpdateApp|Using executing application: /opt/radarr/Radarr.exe
+19-1-6 22:14:26.5|Debug|UpdateApp|Executable location: /opt/radarr/Radarr.exe
+19-1-6 22:14:26.5|Info|InstallUpdateService|Installation Folder: /opt/radarr
+19-1-6 22:14:26.5|Info|InstallUpdateService|Updating Radarr from version 0.2.0.1120 to version 0.2.0.1217
+19-1-6 22:14:26.5|Info|InstallUpdateService|Verifying requirements before update...
+19-1-6 22:14:26.5|Debug|ProcessProvider|Finding process with Id:211
+19-1-6 22:14:26.7|Debug|ProcessProvider|Found process 211:mono-sgen [/usr/bin/mono-sgen]
+19-1-6 22:14:26.7|Info|InstallUpdateService|Verifying Update Folder
+19-1-6 22:14:26.8|Debug|ProcessProvider|Found 0 processes with the name: Radarr.Console
+19-1-6 22:14:26.9|Debug|ProcessProvider|Found 1 processes with the name: Radarr
+19-1-6 22:14:26.9|Debug|ProcessProvider| - [211] mono-sgen
+19-1-6 22:14:27.1|Info|BackupAndRestore|Creating backup of existing installation
+19-1-6 22:14:27.1|Debug|DiskTransferService|Mirror [/opt/radarr] > [/tmp/radarr_update/radarr_backup/]
+19-1-6 22:14:27.1|Debug|DiskTransferService|Mirror [/opt/radarr/NzbDrone.Update] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update]
+19-1-6 22:14:27.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/CurlSharp.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/CurlSharp.dll]
+19-1-6 22:14:27.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/CurlSharp.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/CurlSharp.dll.mdb] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/CurlSharp.dll.mdb]
+19-1-6 22:14:27.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/CurlSharp.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/ICSharpCode.SharpZipLib.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/ICSharpCode.SharpZipLib.dll]
+19-1-6 22:14:27.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/ICSharpCode.SharpZipLib.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/LogentriesCore.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/LogentriesCore.dll]
+19-1-6 22:14:27.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/LogentriesCore.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/LogentriesCore.dll.mdb] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/LogentriesCore.dll.mdb]
+19-1-6 22:14:27.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/LogentriesCore.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/LogentriesNLog.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/LogentriesNLog.dll]
+19-1-6 22:14:27.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/LogentriesNLog.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/LogentriesNLog.dll.mdb] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/LogentriesNLog.dll.mdb]
+19-1-6 22:14:27.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/LogentriesNLog.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/NLog.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/NLog.dll]
+19-1-6 22:14:27.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/NLog.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.2|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/Newtonsoft.Json.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/Newtonsoft.Json.dll]
+19-1-6 22:14:27.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/Newtonsoft.Json.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.2|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/NzbDrone.Common.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/NzbDrone.Common.dll]
+19-1-6 22:14:27.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/NzbDrone.Common.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.2|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/NzbDrone.Common.dll.mdb] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/NzbDrone.Common.dll.mdb]
+19-1-6 22:14:27.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/NzbDrone.Common.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.2|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/NzbDrone.Mono.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/NzbDrone.Mono.dll]
+19-1-6 22:14:27.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/NzbDrone.Mono.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.2|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/NzbDrone.Mono.dll.mdb] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/NzbDrone.Mono.dll.mdb]
+19-1-6 22:14:27.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/NzbDrone.Mono.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.2|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/Org.Mentalis.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/Org.Mentalis.dll]
+19-1-6 22:14:27.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/Org.Mentalis.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.2|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/Radarr.Update.exe] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/Radarr.Update.exe]
+19-1-6 22:14:27.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/Radarr.Update.exe for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.2|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/Radarr.Update.exe.config] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/Radarr.Update.exe.config]
+19-1-6 22:14:27.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/Radarr.Update.exe.config for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.2|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/Radarr.Update.exe.mdb] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/Radarr.Update.exe.mdb]
+19-1-6 22:14:27.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/Radarr.Update.exe.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.2|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Update/SocksWebProxy.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Update/SocksWebProxy.dll]
+19-1-6 22:14:27.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Update/SocksWebProxy.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.3|Debug|DiskTransferService|Mirror [/opt/radarr/UI] > [/tmp/radarr_update/radarr_backup/UI]
+19-1-6 22:14:27.3|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content] > [/tmp/radarr_update/radarr_backup/UI/Content]
+19-1-6 22:14:27.3|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content/FontAwesome] > [/tmp/radarr_update/radarr_backup/UI/Content/FontAwesome]
+19-1-6 22:14:27.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/FontAwesome/FontAwesome.otf] > [/tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/FontAwesome.otf]
+19-1-6 22:14:27.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/FontAwesome.otf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.eot] > [/tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/fontawesome-webfont.eot]
+19-1-6 22:14:27.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/fontawesome-webfont.eot for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.svg] > [/tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/fontawesome-webfont.svg]
+19-1-6 22:14:27.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/fontawesome-webfont.svg for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.ttf] > [/tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/fontawesome-webfont.ttf]
+19-1-6 22:14:27.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/fontawesome-webfont.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.woff] > [/tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/fontawesome-webfont.woff]
+19-1-6 22:14:27.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/fontawesome-webfont.woff for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.woff2] > [/tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/fontawesome-webfont.woff2]
+19-1-6 22:14:27.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/FontAwesome/fontawesome-webfont.woff2 for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.3|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content/Fonts] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts]
+19-1-6 22:14:27.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-light.eot] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-light.eot]
+19-1-6 22:14:27.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-light.eot for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-light.ttf] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-light.ttf]
+19-1-6 22:14:27.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-light.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-light.woff] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-light.woff]
+19-1-6 22:14:27.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-light.woff for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-light.woff2] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-light.woff2]
+19-1-6 22:14:27.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-light.woff2 for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-regular.eot] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-regular.eot]
+19-1-6 22:14:27.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-regular.eot for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-regular.ttf] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-regular.ttf]
+19-1-6 22:14:27.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-regular.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-regular.woff] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-regular.woff]
+19-1-6 22:14:27.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-regular.woff for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-regular.woff2] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-regular.woff2]
+19-1-6 22:14:27.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-regular.woff2 for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-semibold.eot] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-semibold.eot]
+19-1-6 22:14:27.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-semibold.eot for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-semibold.ttf] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-semibold.ttf]
+19-1-6 22:14:27.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-semibold.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-semibold.woff] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-semibold.woff]
+19-1-6 22:14:27.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-semibold.woff for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/opensans-semibold.woff2] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-semibold.woff2]
+19-1-6 22:14:27.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/opensans-semibold.woff2 for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/ubuntumono-regular.eot] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/ubuntumono-regular.eot]
+19-1-6 22:14:27.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/ubuntumono-regular.eot for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/ubuntumono-regular.ttf] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/ubuntumono-regular.ttf]
+19-1-6 22:14:27.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/ubuntumono-regular.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/ubuntumono-regular.woff] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/ubuntumono-regular.woff]
+19-1-6 22:14:27.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/ubuntumono-regular.woff for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Fonts/ubuntumono-regular.woff2] > [/tmp/radarr_update/radarr_backup/UI/Content/Fonts/ubuntumono-regular.woff2]
+19-1-6 22:14:27.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Fonts/ubuntumono-regular.woff2 for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.5|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content/Images] > [/tmp/radarr_update/radarr_backup/UI/Content/Images]
+19-1-6 22:14:27.5|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content/Images/background] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/background]
+19-1-6 22:14:27.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/background/logo.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/background/logo.png]
+19-1-6 22:14:27.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/background/logo.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.5|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content/Images/favicon] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon]
+19-1-6 22:14:27.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/android-chrome-144x144.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-144x144.png]
+19-1-6 22:14:27.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-144x144.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/android-chrome-192x192.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-192x192.png]
+19-1-6 22:14:27.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-192x192.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/android-chrome-256x256.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-256x256.png]
+19-1-6 22:14:27.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-256x256.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/android-chrome-36x36.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-36x36.png]
+19-1-6 22:14:27.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-36x36.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/android-chrome-384x384.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-384x384.png]
+19-1-6 22:14:27.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-384x384.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/android-chrome-48x48.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-48x48.png]
+19-1-6 22:14:27.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-48x48.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/android-chrome-512x512.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-512x512.png]
+19-1-6 22:14:27.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-512x512.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/android-chrome-72x72.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-72x72.png]
+19-1-6 22:14:27.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-72x72.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/android-chrome-96x96.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-96x96.png]
+19-1-6 22:14:27.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/android-chrome-96x96.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-114x114-precomposed.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-114x114-precomposed.png]
+19-1-6 22:14:27.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-114x114-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-114x114.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-114x114.png]
+19-1-6 22:14:27.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-114x114.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-120x120-precomposed.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-120x120-precomposed.png]
+19-1-6 22:14:27.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-120x120-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-120x120.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-120x120.png]
+19-1-6 22:14:27.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-120x120.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.7|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-144x144-precomposed.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-144x144-precomposed.png]
+19-1-6 22:14:27.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-144x144-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.7|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-144x144.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-144x144.png]
+19-1-6 22:14:27.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-144x144.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.7|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-152x152-precomposed.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-152x152-precomposed.png]
+19-1-6 22:14:27.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-152x152-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.7|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-152x152.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-152x152.png]
+19-1-6 22:14:27.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-152x152.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.7|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-180x180-precomposed.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-180x180-precomposed.png]
+19-1-6 22:14:27.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-180x180-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.7|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-180x180.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-180x180.png]
+19-1-6 22:14:27.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-180x180.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.7|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-57x57-precomposed.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-57x57-precomposed.png]
+19-1-6 22:14:27.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-57x57-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.7|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-57x57.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-57x57.png]
+19-1-6 22:14:27.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-57x57.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.7|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-60x60-precomposed.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-60x60-precomposed.png]
+19-1-6 22:14:27.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-60x60-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.8|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-60x60.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-60x60.png]
+19-1-6 22:14:27.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-60x60.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.8|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-72x72-precomposed.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-72x72-precomposed.png]
+19-1-6 22:14:27.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-72x72-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.8|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-72x72.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-72x72.png]
+19-1-6 22:14:27.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-72x72.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.8|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-76x76-precomposed.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-76x76-precomposed.png]
+19-1-6 22:14:27.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-76x76-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.8|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-76x76.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-76x76.png]
+19-1-6 22:14:27.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-76x76.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.8|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-precomposed.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-precomposed.png]
+19-1-6 22:14:27.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.8|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon.png]
+19-1-6 22:14:27.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/apple-touch-icon.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.8|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/browserconfig.xml] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/browserconfig.xml]
+19-1-6 22:14:27.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/browserconfig.xml for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.8|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/favicon-16x16.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/favicon-16x16.png]
+19-1-6 22:14:27.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/favicon-16x16.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.9|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/favicon-194x194.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/favicon-194x194.png]
+19-1-6 22:14:27.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/favicon-194x194.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.9|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/favicon-32x32.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/favicon-32x32.png]
+19-1-6 22:14:27.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/favicon-32x32.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.9|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/favicon.ico] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/favicon.ico]
+19-1-6 22:14:27.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/favicon.ico for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.9|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/manifest.json] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/manifest.json]
+19-1-6 22:14:27.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/manifest.json for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.9|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/mstile-144x144.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/mstile-144x144.png]
+19-1-6 22:14:27.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/mstile-144x144.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.9|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/mstile-150x150.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/mstile-150x150.png]
+19-1-6 22:14:27.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/mstile-150x150.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.9|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/mstile-310x150.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/mstile-310x150.png]
+19-1-6 22:14:27.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/mstile-310x150.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.9|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/mstile-310x310.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/mstile-310x310.png]
+19-1-6 22:14:27.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/mstile-310x310.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:27.9|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/mstile-70x70.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/mstile-70x70.png]
+19-1-6 22:14:27.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/mstile-70x70.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.0|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon/safari-pinned-tab.svg] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/safari-pinned-tab.svg]
+19-1-6 22:14:28.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon/safari-pinned-tab.svg for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.0|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content/Images/logos] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/logos]
+19-1-6 22:14:28.0|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/logos/128.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/logos/128.png]
+19-1-6 22:14:28.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/logos/128.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.0|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/logos/32.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/logos/32.png]
+19-1-6 22:14:28.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/logos/32.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.0|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/logos/48.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/logos/48.png]
+19-1-6 22:14:28.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/logos/48.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.0|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/logos/64.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/logos/64.png]
+19-1-6 22:14:28.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/logos/64.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.0|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content/Images/safari] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/safari]
+19-1-6 22:14:28.0|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/safari/logo.svg] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/safari/logo.svg]
+19-1-6 22:14:28.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/safari/logo.svg for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.0|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content/Images/touch] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/touch]
+19-1-6 22:14:28.0|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/touch/114.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/touch/114.png]
+19-1-6 22:14:28.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/touch/114.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.0|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/touch/144.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/touch/144.png]
+19-1-6 22:14:28.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/touch/144.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.0|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/touch/57.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/touch/57.png]
+19-1-6 22:14:28.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/touch/57.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.1|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/touch/72.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/touch/72.png]
+19-1-6 22:14:28.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/touch/72.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.1|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/404.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/404.png]
+19-1-6 22:14:28.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/404.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.1|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon-debug.ico] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon-debug.ico]
+19-1-6 22:14:28.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon-debug.ico for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.1|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/favicon.ico] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/favicon.ico]
+19-1-6 22:14:28.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/favicon.ico for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.1|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/Images/poster-dark.png] > [/tmp/radarr_update/radarr_backup/UI/Content/Images/poster-dark.png]
+19-1-6 22:14:28.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/Images/poster-dark.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.1|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content/_output] > [/tmp/radarr_update/radarr_backup/UI/Content/_output]
+19-1-6 22:14:28.1|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content/_output/UI] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI]
+19-1-6 22:14:28.1|Debug|DiskTransferService|Mirror [/opt/radarr/UI/Content/_output/UI/Content] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content]
+19-1-6 22:14:28.1|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/activity.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/activity.css.map]
+19-1-6 22:14:28.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/activity.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.1|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/addMovies.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/addMovies.css.map]
+19-1-6 22:14:28.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/addMovies.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.1|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/bootstrap.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/bootstrap.css.map]
+19-1-6 22:14:28.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/bootstrap.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.1|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/bootstrap.toggle-switch.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/bootstrap.toggle-switch.css.map]
+19-1-6 22:14:28.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/bootstrap.toggle-switch.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.2|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/calendar.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/calendar.css.map]
+19-1-6 22:14:28.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/calendar.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.2|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/cells.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/cells.css.map]
+19-1-6 22:14:28.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/cells.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.2|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/fullcalendar.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/fullcalendar.css.map]
+19-1-6 22:14:28.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/fullcalendar.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.2|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/info.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/info.css.map]
+19-1-6 22:14:28.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/info.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.2|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/logs.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/logs.css.map]
+19-1-6 22:14:28.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/logs.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.2|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/manualimport.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/manualimport.css.map]
+19-1-6 22:14:28.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/manualimport.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.2|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/messenger.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/messenger.css.map]
+19-1-6 22:14:28.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/messenger.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.2|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/messenger.flat.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/messenger.flat.css.map]
+19-1-6 22:14:28.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/messenger.flat.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.2|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/movies.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/movies.css.map]
+19-1-6 22:14:28.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/movies.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/overrides.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/overrides.css.map]
+19-1-6 22:14:28.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/overrides.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/settings.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/settings.css.map]
+19-1-6 22:14:28.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/settings.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/theme.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/theme.css.map]
+19-1-6 22:14:28.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/theme.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/_output/UI/Content/update.css.map] > [/tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/update.css.map]
+19-1-6 22:14:28.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/_output/UI/Content/update.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/activity.css] > [/tmp/radarr_update/radarr_backup/UI/Content/activity.css]
+19-1-6 22:14:28.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/activity.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/addMovies.css] > [/tmp/radarr_update/radarr_backup/UI/Content/addMovies.css]
+19-1-6 22:14:28.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/addMovies.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/bootstrap.css] > [/tmp/radarr_update/radarr_backup/UI/Content/bootstrap.css]
+19-1-6 22:14:28.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/bootstrap.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/bootstrap.toggle-switch.css] > [/tmp/radarr_update/radarr_backup/UI/Content/bootstrap.toggle-switch.css]
+19-1-6 22:14:28.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/bootstrap.toggle-switch.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.3|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/calendar.css] > [/tmp/radarr_update/radarr_backup/UI/Content/calendar.css]
+19-1-6 22:14:28.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/calendar.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/cells.css] > [/tmp/radarr_update/radarr_backup/UI/Content/cells.css]
+19-1-6 22:14:28.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/cells.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/fullcalendar.css] > [/tmp/radarr_update/radarr_backup/UI/Content/fullcalendar.css]
+19-1-6 22:14:28.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/fullcalendar.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/info.css] > [/tmp/radarr_update/radarr_backup/UI/Content/info.css]
+19-1-6 22:14:28.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/info.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/logs.css] > [/tmp/radarr_update/radarr_backup/UI/Content/logs.css]
+19-1-6 22:14:28.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/logs.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/manualimport.css] > [/tmp/radarr_update/radarr_backup/UI/Content/manualimport.css]
+19-1-6 22:14:28.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/manualimport.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/messenger.css] > [/tmp/radarr_update/radarr_backup/UI/Content/messenger.css]
+19-1-6 22:14:28.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/messenger.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/messenger.flat.css] > [/tmp/radarr_update/radarr_backup/UI/Content/messenger.flat.css]
+19-1-6 22:14:28.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/messenger.flat.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/movies.css] > [/tmp/radarr_update/radarr_backup/UI/Content/movies.css]
+19-1-6 22:14:28.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/movies.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/overrides.css] > [/tmp/radarr_update/radarr_backup/UI/Content/overrides.css]
+19-1-6 22:14:28.4|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/overrides.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.4|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/robots.txt] > [/tmp/radarr_update/radarr_backup/UI/Content/robots.txt]
+19-1-6 22:14:28.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/robots.txt for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/settings.css] > [/tmp/radarr_update/radarr_backup/UI/Content/settings.css]
+19-1-6 22:14:28.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/settings.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/theme.css] > [/tmp/radarr_update/radarr_backup/UI/Content/theme.css]
+19-1-6 22:14:28.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/theme.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/update.css] > [/tmp/radarr_update/radarr_backup/UI/Content/update.css]
+19-1-6 22:14:28.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/update.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/Content/zero.clipboard.swf] > [/tmp/radarr_update/radarr_backup/UI/Content/zero.clipboard.swf]
+19-1-6 22:14:28.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/Content/zero.clipboard.swf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/handlebars.runtime.js] > [/tmp/radarr_update/radarr_backup/UI/handlebars.runtime.js]
+19-1-6 22:14:28.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/handlebars.runtime.js for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/index.html] > [/tmp/radarr_update/radarr_backup/UI/index.html]
+19-1-6 22:14:28.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/index.html for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/login.html] > [/tmp/radarr_update/radarr_backup/UI/login.html]
+19-1-6 22:14:28.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/login.html for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/main.js] > [/tmp/radarr_update/radarr_backup/UI/main.js]
+19-1-6 22:14:28.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/main.js for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.5|Debug|DiskTransferService|Copy [/opt/radarr/UI/main.map] > [/tmp/radarr_update/radarr_backup/UI/main.map]
+19-1-6 22:14:28.5|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/main.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/oauth.html] > [/tmp/radarr_update/radarr_backup/UI/oauth.html]
+19-1-6 22:14:28.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/oauth.html for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/polyfills.js] > [/tmp/radarr_update/radarr_backup/UI/polyfills.js]
+19-1-6 22:14:28.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/polyfills.js for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/templates.js] > [/tmp/radarr_update/radarr_backup/UI/templates.js]
+19-1-6 22:14:28.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/templates.js for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/vendor.js] > [/tmp/radarr_update/radarr_backup/UI/vendor.js]
+19-1-6 22:14:28.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/vendor.js for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.6|Debug|DiskTransferService|Copy [/opt/radarr/UI/vendor.map] > [/tmp/radarr_update/radarr_backup/UI/vendor.map]
+19-1-6 22:14:28.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/UI/vendor.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.6|Debug|DiskTransferService|Copy [/opt/radarr/CookComputing.XmlRpcV2.dll] > [/tmp/radarr_update/radarr_backup/CookComputing.XmlRpcV2.dll]
+19-1-6 22:14:28.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/CookComputing.XmlRpcV2.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.6|Debug|DiskTransferService|Copy [/opt/radarr/CurlSharp.dll] > [/tmp/radarr_update/radarr_backup/CurlSharp.dll]
+19-1-6 22:14:28.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/CurlSharp.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.6|Debug|DiskTransferService|Copy [/opt/radarr/CurlSharp.dll.config] > [/tmp/radarr_update/radarr_backup/CurlSharp.dll.config]
+19-1-6 22:14:28.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/CurlSharp.dll.config for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.6|Debug|DiskTransferService|Copy [/opt/radarr/CurlSharp.dll.mdb] > [/tmp/radarr_update/radarr_backup/CurlSharp.dll.mdb]
+19-1-6 22:14:28.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/CurlSharp.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.6|Debug|DiskTransferService|Copy [/opt/radarr/FluentMigrator.Runner.dll] > [/tmp/radarr_update/radarr_backup/FluentMigrator.Runner.dll]
+19-1-6 22:14:28.6|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/FluentMigrator.Runner.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.7|Debug|DiskTransferService|Copy [/opt/radarr/FluentMigrator.Runner.dll.mdb] > [/tmp/radarr_update/radarr_backup/FluentMigrator.Runner.dll.mdb]
+19-1-6 22:14:28.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/FluentMigrator.Runner.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.7|Debug|DiskTransferService|Copy [/opt/radarr/FluentMigrator.dll] > [/tmp/radarr_update/radarr_backup/FluentMigrator.dll]
+19-1-6 22:14:28.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/FluentMigrator.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.7|Debug|DiskTransferService|Copy [/opt/radarr/FluentMigrator.dll.mdb] > [/tmp/radarr_update/radarr_backup/FluentMigrator.dll.mdb]
+19-1-6 22:14:28.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/FluentMigrator.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.7|Debug|DiskTransferService|Copy [/opt/radarr/FluentValidation.dll] > [/tmp/radarr_update/radarr_backup/FluentValidation.dll]
+19-1-6 22:14:28.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/FluentValidation.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.7|Debug|DiskTransferService|Copy [/opt/radarr/FluentValidation.dll.mdb] > [/tmp/radarr_update/radarr_backup/FluentValidation.dll.mdb]
+19-1-6 22:14:28.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/FluentValidation.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.7|Debug|DiskTransferService|Copy [/opt/radarr/Growl.Connector.dll] > [/tmp/radarr_update/radarr_backup/Growl.Connector.dll]
+19-1-6 22:14:28.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Growl.Connector.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.7|Debug|DiskTransferService|Copy [/opt/radarr/Growl.CoreLibrary.dll] > [/tmp/radarr_update/radarr_backup/Growl.CoreLibrary.dll]
+19-1-6 22:14:28.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Growl.CoreLibrary.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.7|Debug|DiskTransferService|Copy [/opt/radarr/ICSharpCode.SharpZipLib.dll] > [/tmp/radarr_update/radarr_backup/ICSharpCode.SharpZipLib.dll]
+19-1-6 22:14:28.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/ICSharpCode.SharpZipLib.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.7|Debug|DiskTransferService|Copy [/opt/radarr/Ical.Net.Collections.dll] > [/tmp/radarr_update/radarr_backup/Ical.Net.Collections.dll]
+19-1-6 22:14:28.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Ical.Net.Collections.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.7|Debug|DiskTransferService|Copy [/opt/radarr/Ical.Net.Collections.dll.mdb] > [/tmp/radarr_update/radarr_backup/Ical.Net.Collections.dll.mdb]
+19-1-6 22:14:28.7|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Ical.Net.Collections.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.7|Debug|DiskTransferService|Copy [/opt/radarr/Ical.Net.dll] > [/tmp/radarr_update/radarr_backup/Ical.Net.dll]
+19-1-6 22:14:28.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Ical.Net.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.8|Debug|DiskTransferService|Copy [/opt/radarr/Ical.Net.dll.mdb] > [/tmp/radarr_update/radarr_backup/Ical.Net.dll.mdb]
+19-1-6 22:14:28.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Ical.Net.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.8|Debug|DiskTransferService|Copy [/opt/radarr/ImageResizer.dll] > [/tmp/radarr_update/radarr_backup/ImageResizer.dll]
+19-1-6 22:14:28.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/ImageResizer.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.8|Debug|DiskTransferService|Copy [/opt/radarr/Interop.NetFwTypeLib.dll] > [/tmp/radarr_update/radarr_backup/Interop.NetFwTypeLib.dll]
+19-1-6 22:14:28.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Interop.NetFwTypeLib.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.8|Debug|DiskTransferService|Copy [/opt/radarr/LogentriesCore.dll] > [/tmp/radarr_update/radarr_backup/LogentriesCore.dll]
+19-1-6 22:14:28.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/LogentriesCore.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.8|Debug|DiskTransferService|Copy [/opt/radarr/LogentriesCore.dll.mdb] > [/tmp/radarr_update/radarr_backup/LogentriesCore.dll.mdb]
+19-1-6 22:14:28.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/LogentriesCore.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.8|Debug|DiskTransferService|Copy [/opt/radarr/LogentriesNLog.dll] > [/tmp/radarr_update/radarr_backup/LogentriesNLog.dll]
+19-1-6 22:14:28.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/LogentriesNLog.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.8|Debug|DiskTransferService|Copy [/opt/radarr/LogentriesNLog.dll.mdb] > [/tmp/radarr_update/radarr_backup/LogentriesNLog.dll.mdb]
+19-1-6 22:14:28.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/LogentriesNLog.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.8|Debug|DiskTransferService|Copy [/opt/radarr/Marr.Data.dll] > [/tmp/radarr_update/radarr_backup/Marr.Data.dll]
+19-1-6 22:14:28.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Marr.Data.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.8|Debug|DiskTransferService|Copy [/opt/radarr/Marr.Data.dll.mdb] > [/tmp/radarr_update/radarr_backup/Marr.Data.dll.mdb]
+19-1-6 22:14:28.8|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Marr.Data.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.8|Debug|DiskTransferService|Copy [/opt/radarr/Microsoft.AspNet.SignalR.Core.dll] > [/tmp/radarr_update/radarr_backup/Microsoft.AspNet.SignalR.Core.dll]
+19-1-6 22:14:28.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Microsoft.AspNet.SignalR.Core.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.9|Debug|DiskTransferService|Copy [/opt/radarr/Microsoft.AspNet.SignalR.Core.dll.mdb] > [/tmp/radarr_update/radarr_backup/Microsoft.AspNet.SignalR.Core.dll.mdb]
+19-1-6 22:14:28.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Microsoft.AspNet.SignalR.Core.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.9|Debug|DiskTransferService|Copy [/opt/radarr/Microsoft.AspNet.SignalR.Owin.dll] > [/tmp/radarr_update/radarr_backup/Microsoft.AspNet.SignalR.Owin.dll]
+19-1-6 22:14:28.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Microsoft.AspNet.SignalR.Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.9|Debug|DiskTransferService|Copy [/opt/radarr/Microsoft.AspNet.SignalR.Owin.dll.mdb] > [/tmp/radarr_update/radarr_backup/Microsoft.AspNet.SignalR.Owin.dll.mdb]
+19-1-6 22:14:28.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Microsoft.AspNet.SignalR.Owin.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.9|Debug|DiskTransferService|Copy [/opt/radarr/Microsoft.Owin.Host.HttpListener.dll] > [/tmp/radarr_update/radarr_backup/Microsoft.Owin.Host.HttpListener.dll]
+19-1-6 22:14:28.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Microsoft.Owin.Host.HttpListener.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.9|Debug|DiskTransferService|Copy [/opt/radarr/Microsoft.Owin.Hosting.dll] > [/tmp/radarr_update/radarr_backup/Microsoft.Owin.Hosting.dll]
+19-1-6 22:14:28.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Microsoft.Owin.Hosting.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.9|Debug|DiskTransferService|Copy [/opt/radarr/Microsoft.Owin.dll] > [/tmp/radarr_update/radarr_backup/Microsoft.Owin.dll]
+19-1-6 22:14:28.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Microsoft.Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.9|Debug|DiskTransferService|Copy [/opt/radarr/MonoTorrent.dll] > [/tmp/radarr_update/radarr_backup/MonoTorrent.dll]
+19-1-6 22:14:28.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/MonoTorrent.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.9|Debug|DiskTransferService|Copy [/opt/radarr/MonoTorrent.dll.mdb] > [/tmp/radarr_update/radarr_backup/MonoTorrent.dll.mdb]
+19-1-6 22:14:28.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/MonoTorrent.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.9|Debug|DiskTransferService|Copy [/opt/radarr/NLog.dll] > [/tmp/radarr_update/radarr_backup/NLog.dll]
+19-1-6 22:14:28.9|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NLog.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:28.9|Debug|DiskTransferService|Copy [/opt/radarr/Nancy.Authentication.Basic.dll] > [/tmp/radarr_update/radarr_backup/Nancy.Authentication.Basic.dll]
+19-1-6 22:14:29.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Nancy.Authentication.Basic.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.0|Debug|DiskTransferService|Copy [/opt/radarr/Nancy.Authentication.Forms.dll] > [/tmp/radarr_update/radarr_backup/Nancy.Authentication.Forms.dll]
+19-1-6 22:14:29.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Nancy.Authentication.Forms.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.0|Debug|DiskTransferService|Copy [/opt/radarr/Nancy.Owin.dll] > [/tmp/radarr_update/radarr_backup/Nancy.Owin.dll]
+19-1-6 22:14:29.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Nancy.Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.0|Debug|DiskTransferService|Copy [/opt/radarr/Nancy.dll] > [/tmp/radarr_update/radarr_backup/Nancy.dll]
+19-1-6 22:14:29.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Nancy.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.0|Debug|DiskTransferService|Copy [/opt/radarr/Newtonsoft.Json.dll] > [/tmp/radarr_update/radarr_backup/Newtonsoft.Json.dll]
+19-1-6 22:14:29.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Newtonsoft.Json.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.0|Debug|DiskTransferService|Copy [/opt/radarr/NodaTime.dll] > [/tmp/radarr_update/radarr_backup/NodaTime.dll]
+19-1-6 22:14:29.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NodaTime.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.0|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Api.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Api.dll]
+19-1-6 22:14:29.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Api.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.0|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Api.dll.mdb] > [/tmp/radarr_update/radarr_backup/NzbDrone.Api.dll.mdb]
+19-1-6 22:14:29.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Api.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.0|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Common.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Common.dll]
+19-1-6 22:14:29.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Common.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.0|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Common.dll.mdb] > [/tmp/radarr_update/radarr_backup/NzbDrone.Common.dll.mdb]
+19-1-6 22:14:29.0|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Common.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Core.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Core.dll]
+19-1-6 22:14:29.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Core.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Core.dll.config] > [/tmp/radarr_update/radarr_backup/NzbDrone.Core.dll.config]
+19-1-6 22:14:29.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Core.dll.config for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Core.dll.mdb] > [/tmp/radarr_update/radarr_backup/NzbDrone.Core.dll.mdb]
+19-1-6 22:14:29.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Core.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Mono.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.Mono.dll]
+19-1-6 22:14:29.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Mono.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.Mono.dll.mdb] > [/tmp/radarr_update/radarr_backup/NzbDrone.Mono.dll.mdb]
+19-1-6 22:14:29.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.Mono.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.SignalR.dll] > [/tmp/radarr_update/radarr_backup/NzbDrone.SignalR.dll]
+19-1-6 22:14:29.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.SignalR.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.1|Debug|DiskTransferService|Copy [/opt/radarr/NzbDrone.SignalR.dll.mdb] > [/tmp/radarr_update/radarr_backup/NzbDrone.SignalR.dll.mdb]
+19-1-6 22:14:29.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/NzbDrone.SignalR.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.1|Debug|DiskTransferService|Copy [/opt/radarr/OAuth.dll] > [/tmp/radarr_update/radarr_backup/OAuth.dll]
+19-1-6 22:14:29.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/OAuth.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.1|Debug|DiskTransferService|Copy [/opt/radarr/OAuth.dll.mdb] > [/tmp/radarr_update/radarr_backup/OAuth.dll.mdb]
+19-1-6 22:14:29.1|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/OAuth.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.1|Debug|DiskTransferService|Copy [/opt/radarr/Org.Mentalis.dll] > [/tmp/radarr_update/radarr_backup/Org.Mentalis.dll]
+19-1-6 22:14:29.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Org.Mentalis.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.2|Debug|DiskTransferService|Copy [/opt/radarr/Owin.dll] > [/tmp/radarr_update/radarr_backup/Owin.dll]
+19-1-6 22:14:29.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.2|Debug|DiskTransferService|Copy [/opt/radarr/Prowlin.dll] > [/tmp/radarr_update/radarr_backup/Prowlin.dll]
+19-1-6 22:14:29.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Prowlin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.2|Debug|DiskTransferService|Copy [/opt/radarr/Radarr.Host.dll] > [/tmp/radarr_update/radarr_backup/Radarr.Host.dll]
+19-1-6 22:14:29.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Radarr.Host.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.2|Debug|DiskTransferService|Copy [/opt/radarr/Radarr.Host.dll.mdb] > [/tmp/radarr_update/radarr_backup/Radarr.Host.dll.mdb]
+19-1-6 22:14:29.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Radarr.Host.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.2|Debug|DiskTransferService|Copy [/opt/radarr/Radarr.exe] > [/tmp/radarr_update/radarr_backup/Radarr.exe]
+19-1-6 22:14:29.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Radarr.exe for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.2|Debug|DiskTransferService|Copy [/opt/radarr/Radarr.exe.config] > [/tmp/radarr_update/radarr_backup/Radarr.exe.config]
+19-1-6 22:14:29.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Radarr.exe.config for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.2|Debug|DiskTransferService|Copy [/opt/radarr/Radarr.exe.mdb] > [/tmp/radarr_update/radarr_backup/Radarr.exe.mdb]
+19-1-6 22:14:29.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/Radarr.exe.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.2|Debug|DiskTransferService|Copy [/opt/radarr/RestSharp.dll] > [/tmp/radarr_update/radarr_backup/RestSharp.dll]
+19-1-6 22:14:29.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/RestSharp.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.2|Debug|DiskTransferService|Copy [/opt/radarr/SocksWebProxy.dll] > [/tmp/radarr_update/radarr_backup/SocksWebProxy.dll]
+19-1-6 22:14:29.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/SocksWebProxy.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.2|Debug|DiskTransferService|Copy [/opt/radarr/System.Data.SQLite.dll] > [/tmp/radarr_update/radarr_backup/System.Data.SQLite.dll]
+19-1-6 22:14:29.2|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/System.Data.SQLite.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.3|Debug|DiskTransferService|Copy [/opt/radarr/System.Data.SQLite.xml] > [/tmp/radarr_update/radarr_backup/System.Data.SQLite.xml]
+19-1-6 22:14:29.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/System.Data.SQLite.xml for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.3|Debug|DiskTransferService|Copy [/opt/radarr/antlr.runtime.dll] > [/tmp/radarr_update/radarr_backup/antlr.runtime.dll]
+19-1-6 22:14:29.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/antlr.runtime.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.3|Debug|DiskTransferService|Copy [/opt/radarr/antlr.runtime.dll.mdb] > [/tmp/radarr_update/radarr_backup/antlr.runtime.dll.mdb]
+19-1-6 22:14:29.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_backup/antlr.runtime.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.3|Info|BackupAppData|Backing up appdata (database/config)
+19-1-6 22:14:29.3|Debug|DiskTransferService|Copy [/config/config.xml] > [/tmp/radarr_update/radarr_appdata_backup/config.xml]
+19-1-6 22:14:29.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_appdata_backup/config.xml for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.3|Debug|DiskTransferService|Copy [/config/nzbdrone.db] > [/tmp/radarr_update/radarr_appdata_backup/nzbdrone.db]
+19-1-6 22:14:29.3|Trace|SymbLinkResolver|Checking path /tmp/radarr_update/radarr_appdata_backup/nzbdrone.db for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.3|Info|InstallUpdateService|Emptying installation folder
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/CookComputing.XmlRpcV2.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/CurlSharp.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/CurlSharp.dll.config
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/CurlSharp.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/FluentMigrator.Runner.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/FluentMigrator.Runner.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/FluentMigrator.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/FluentMigrator.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/FluentValidation.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/FluentValidation.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Growl.Connector.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Growl.CoreLibrary.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/ICSharpCode.SharpZipLib.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Ical.Net.Collections.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Ical.Net.Collections.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Ical.Net.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Ical.Net.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/ImageResizer.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Interop.NetFwTypeLib.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/LogentriesCore.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/LogentriesCore.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/LogentriesNLog.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/LogentriesNLog.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Marr.Data.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Marr.Data.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Microsoft.AspNet.SignalR.Core.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Microsoft.AspNet.SignalR.Core.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Microsoft.AspNet.SignalR.Owin.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Microsoft.AspNet.SignalR.Owin.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Microsoft.Owin.Host.HttpListener.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Microsoft.Owin.Hosting.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Microsoft.Owin.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/MonoTorrent.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/MonoTorrent.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NLog.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Nancy.Authentication.Basic.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Nancy.Authentication.Forms.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Nancy.Owin.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Nancy.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Newtonsoft.Json.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NodaTime.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NzbDrone.Api.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NzbDrone.Api.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NzbDrone.Common.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NzbDrone.Common.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NzbDrone.Core.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NzbDrone.Core.dll.config
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NzbDrone.Core.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NzbDrone.Mono.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NzbDrone.Mono.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NzbDrone.SignalR.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/NzbDrone.SignalR.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/OAuth.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/OAuth.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Org.Mentalis.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Owin.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Prowlin.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Radarr.Host.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Radarr.Host.dll.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Radarr.exe
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Radarr.exe.config
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/Radarr.exe.mdb
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/RestSharp.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/SocksWebProxy.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/System.Data.SQLite.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/System.Data.SQLite.xml
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/antlr.runtime.dll
+19-1-6 22:14:29.3|Trace|DiskProviderBase|Deleting file: /opt/radarr/antlr.runtime.dll.mdb
+19-1-6 22:14:29.3|Info|InstallUpdateService|Copying new files to target folder
+19-1-6 22:14:29.3|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/] > [/opt/radarr]
+19-1-6 22:14:29.3|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI] > [/opt/radarr/UI]
+19-1-6 22:14:29.3|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content] > [/opt/radarr/UI/Content]
+19-1-6 22:14:29.3|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content/FontAwesome] > [/opt/radarr/UI/Content/FontAwesome]
+19-1-6 22:14:29.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/FontAwesome/FontAwesome.otf] > [/opt/radarr/UI/Content/FontAwesome/FontAwesome.otf]
+19-1-6 22:14:29.3|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/FontAwesome/FontAwesome.otf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/FontAwesome/fontawesome-webfont.eot] > [/opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.eot]
+19-1-6 22:14:29.3|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.eot for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/FontAwesome/fontawesome-webfont.svg] > [/opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.svg]
+19-1-6 22:14:29.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.svg for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/FontAwesome/fontawesome-webfont.ttf] > [/opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.ttf]
+19-1-6 22:14:29.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/FontAwesome/fontawesome-webfont.woff] > [/opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.woff]
+19-1-6 22:14:29.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.woff for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/FontAwesome/fontawesome-webfont.woff2] > [/opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.woff2]
+19-1-6 22:14:29.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/FontAwesome/fontawesome-webfont.woff2 for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.4|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content/Fonts] > [/opt/radarr/UI/Content/Fonts]
+19-1-6 22:14:29.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-light.eot] > [/opt/radarr/UI/Content/Fonts/opensans-light.eot]
+19-1-6 22:14:29.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-light.eot for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-light.ttf] > [/opt/radarr/UI/Content/Fonts/opensans-light.ttf]
+19-1-6 22:14:29.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-light.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-light.woff] > [/opt/radarr/UI/Content/Fonts/opensans-light.woff]
+19-1-6 22:14:29.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-light.woff for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-light.woff2] > [/opt/radarr/UI/Content/Fonts/opensans-light.woff2]
+19-1-6 22:14:29.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-light.woff2 for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-regular.eot] > [/opt/radarr/UI/Content/Fonts/opensans-regular.eot]
+19-1-6 22:14:29.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-regular.eot for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-regular.ttf] > [/opt/radarr/UI/Content/Fonts/opensans-regular.ttf]
+19-1-6 22:14:29.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-regular.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-regular.woff] > [/opt/radarr/UI/Content/Fonts/opensans-regular.woff]
+19-1-6 22:14:29.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-regular.woff for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-regular.woff2] > [/opt/radarr/UI/Content/Fonts/opensans-regular.woff2]
+19-1-6 22:14:29.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-regular.woff2 for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-semibold.eot] > [/opt/radarr/UI/Content/Fonts/opensans-semibold.eot]
+19-1-6 22:14:29.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-semibold.eot for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-semibold.ttf] > [/opt/radarr/UI/Content/Fonts/opensans-semibold.ttf]
+19-1-6 22:14:29.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-semibold.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-semibold.woff] > [/opt/radarr/UI/Content/Fonts/opensans-semibold.woff]
+19-1-6 22:14:29.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-semibold.woff for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/opensans-semibold.woff2] > [/opt/radarr/UI/Content/Fonts/opensans-semibold.woff2]
+19-1-6 22:14:29.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/opensans-semibold.woff2 for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/ubuntumono-regular.eot] > [/opt/radarr/UI/Content/Fonts/ubuntumono-regular.eot]
+19-1-6 22:14:29.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/ubuntumono-regular.eot for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/ubuntumono-regular.ttf] > [/opt/radarr/UI/Content/Fonts/ubuntumono-regular.ttf]
+19-1-6 22:14:29.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/ubuntumono-regular.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/ubuntumono-regular.woff] > [/opt/radarr/UI/Content/Fonts/ubuntumono-regular.woff]
+19-1-6 22:14:29.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/ubuntumono-regular.woff for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Fonts/ubuntumono-regular.woff2] > [/opt/radarr/UI/Content/Fonts/ubuntumono-regular.woff2]
+19-1-6 22:14:29.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Fonts/ubuntumono-regular.woff2 for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.6|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content/Images] > [/opt/radarr/UI/Content/Images]
+19-1-6 22:14:29.6|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content/Images/background] > [/opt/radarr/UI/Content/Images/background]
+19-1-6 22:14:29.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/background/logo.png] > [/opt/radarr/UI/Content/Images/background/logo.png]
+19-1-6 22:14:29.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/background/logo.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.6|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content/Images/favicon] > [/opt/radarr/UI/Content/Images/favicon]
+19-1-6 22:14:29.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/android-chrome-144x144.png] > [/opt/radarr/UI/Content/Images/favicon/android-chrome-144x144.png]
+19-1-6 22:14:29.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/android-chrome-144x144.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/android-chrome-192x192.png] > [/opt/radarr/UI/Content/Images/favicon/android-chrome-192x192.png]
+19-1-6 22:14:29.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/android-chrome-192x192.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/android-chrome-256x256.png] > [/opt/radarr/UI/Content/Images/favicon/android-chrome-256x256.png]
+19-1-6 22:14:29.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/android-chrome-256x256.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/android-chrome-36x36.png] > [/opt/radarr/UI/Content/Images/favicon/android-chrome-36x36.png]
+19-1-6 22:14:29.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/android-chrome-36x36.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/android-chrome-384x384.png] > [/opt/radarr/UI/Content/Images/favicon/android-chrome-384x384.png]
+19-1-6 22:14:29.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/android-chrome-384x384.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/android-chrome-48x48.png] > [/opt/radarr/UI/Content/Images/favicon/android-chrome-48x48.png]
+19-1-6 22:14:29.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/android-chrome-48x48.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/android-chrome-512x512.png] > [/opt/radarr/UI/Content/Images/favicon/android-chrome-512x512.png]
+19-1-6 22:14:29.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/android-chrome-512x512.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/android-chrome-72x72.png] > [/opt/radarr/UI/Content/Images/favicon/android-chrome-72x72.png]
+19-1-6 22:14:29.7|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/android-chrome-72x72.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/android-chrome-96x96.png] > [/opt/radarr/UI/Content/Images/favicon/android-chrome-96x96.png]
+19-1-6 22:14:29.7|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/android-chrome-96x96.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-114x114-precomposed.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-114x114-precomposed.png]
+19-1-6 22:14:29.7|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-114x114-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-114x114.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-114x114.png]
+19-1-6 22:14:29.7|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-114x114.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-120x120-precomposed.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-120x120-precomposed.png]
+19-1-6 22:14:29.7|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-120x120-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-120x120.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-120x120.png]
+19-1-6 22:14:29.7|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-120x120.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-144x144-precomposed.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-144x144-precomposed.png]
+19-1-6 22:14:29.7|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-144x144-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-144x144.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-144x144.png]
+19-1-6 22:14:29.7|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-144x144.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-152x152-precomposed.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-152x152-precomposed.png]
+19-1-6 22:14:29.7|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-152x152-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-152x152.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-152x152.png]
+19-1-6 22:14:29.8|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-152x152.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-180x180-precomposed.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-180x180-precomposed.png]
+19-1-6 22:14:29.8|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-180x180-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-180x180.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-180x180.png]
+19-1-6 22:14:29.8|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-180x180.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-57x57-precomposed.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-57x57-precomposed.png]
+19-1-6 22:14:29.8|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-57x57-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-57x57.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-57x57.png]
+19-1-6 22:14:29.8|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-57x57.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-60x60-precomposed.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-60x60-precomposed.png]
+19-1-6 22:14:29.8|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-60x60-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-60x60.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-60x60.png]
+19-1-6 22:14:29.8|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-60x60.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-72x72-precomposed.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-72x72-precomposed.png]
+19-1-6 22:14:29.8|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-72x72-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-72x72.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-72x72.png]
+19-1-6 22:14:29.8|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-72x72.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-76x76-precomposed.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-76x76-precomposed.png]
+19-1-6 22:14:29.9|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-76x76-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-76x76.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-76x76.png]
+19-1-6 22:14:29.9|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-76x76.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon-precomposed.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon-precomposed.png]
+19-1-6 22:14:29.9|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon-precomposed.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/apple-touch-icon.png] > [/opt/radarr/UI/Content/Images/favicon/apple-touch-icon.png]
+19-1-6 22:14:29.9|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/apple-touch-icon.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/browserconfig.xml] > [/opt/radarr/UI/Content/Images/favicon/browserconfig.xml]
+19-1-6 22:14:29.9|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/browserconfig.xml for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/favicon-16x16.png] > [/opt/radarr/UI/Content/Images/favicon/favicon-16x16.png]
+19-1-6 22:14:29.9|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/favicon-16x16.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/favicon-194x194.png] > [/opt/radarr/UI/Content/Images/favicon/favicon-194x194.png]
+19-1-6 22:14:29.9|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/favicon-194x194.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/favicon-32x32.png] > [/opt/radarr/UI/Content/Images/favicon/favicon-32x32.png]
+19-1-6 22:14:29.9|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/favicon-32x32.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:29.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/favicon.ico] > [/opt/radarr/UI/Content/Images/favicon/favicon.ico]
+19-1-6 22:14:29.9|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/favicon.ico for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/manifest.json] > [/opt/radarr/UI/Content/Images/favicon/manifest.json]
+19-1-6 22:14:30.0|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/manifest.json for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/mstile-144x144.png] > [/opt/radarr/UI/Content/Images/favicon/mstile-144x144.png]
+19-1-6 22:14:30.0|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/mstile-144x144.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/mstile-150x150.png] > [/opt/radarr/UI/Content/Images/favicon/mstile-150x150.png]
+19-1-6 22:14:30.0|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/mstile-150x150.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/mstile-310x150.png] > [/opt/radarr/UI/Content/Images/favicon/mstile-310x150.png]
+19-1-6 22:14:30.0|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/mstile-310x150.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/mstile-310x310.png] > [/opt/radarr/UI/Content/Images/favicon/mstile-310x310.png]
+19-1-6 22:14:30.0|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/mstile-310x310.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/mstile-70x70.png] > [/opt/radarr/UI/Content/Images/favicon/mstile-70x70.png]
+19-1-6 22:14:30.0|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/mstile-70x70.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon/safari-pinned-tab.svg] > [/opt/radarr/UI/Content/Images/favicon/safari-pinned-tab.svg]
+19-1-6 22:14:30.0|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon/safari-pinned-tab.svg for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.0|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content/Images/logos] > [/opt/radarr/UI/Content/Images/logos]
+19-1-6 22:14:30.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/logos/128.png] > [/opt/radarr/UI/Content/Images/logos/128.png]
+19-1-6 22:14:30.0|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/logos/128.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/logos/32.png] > [/opt/radarr/UI/Content/Images/logos/32.png]
+19-1-6 22:14:30.0|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/logos/32.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/logos/48.png] > [/opt/radarr/UI/Content/Images/logos/48.png]
+19-1-6 22:14:30.1|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/logos/48.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/logos/64.png] > [/opt/radarr/UI/Content/Images/logos/64.png]
+19-1-6 22:14:30.1|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/logos/64.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.1|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content/Images/safari] > [/opt/radarr/UI/Content/Images/safari]
+19-1-6 22:14:30.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/safari/logo.svg] > [/opt/radarr/UI/Content/Images/safari/logo.svg]
+19-1-6 22:14:30.1|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/safari/logo.svg for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.1|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content/Images/touch] > [/opt/radarr/UI/Content/Images/touch]
+19-1-6 22:14:30.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/touch/114.png] > [/opt/radarr/UI/Content/Images/touch/114.png]
+19-1-6 22:14:30.1|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/touch/114.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/touch/144.png] > [/opt/radarr/UI/Content/Images/touch/144.png]
+19-1-6 22:14:30.1|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/touch/144.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/touch/57.png] > [/opt/radarr/UI/Content/Images/touch/57.png]
+19-1-6 22:14:30.1|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/touch/57.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/touch/72.png] > [/opt/radarr/UI/Content/Images/touch/72.png]
+19-1-6 22:14:30.1|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/touch/72.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/404.png] > [/opt/radarr/UI/Content/Images/404.png]
+19-1-6 22:14:30.1|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/404.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon-debug.ico] > [/opt/radarr/UI/Content/Images/favicon-debug.ico]
+19-1-6 22:14:30.1|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon-debug.ico for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/favicon.ico] > [/opt/radarr/UI/Content/Images/favicon.ico]
+19-1-6 22:14:30.2|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/favicon.ico for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/Images/poster-dark.png] > [/opt/radarr/UI/Content/Images/poster-dark.png]
+19-1-6 22:14:30.2|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/Images/poster-dark.png for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.2|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content/_output] > [/opt/radarr/UI/Content/_output]
+19-1-6 22:14:30.2|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content/_output/UI] > [/opt/radarr/UI/Content/_output/UI]
+19-1-6 22:14:30.2|Debug|DiskTransferService|Mirror [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content] > [/opt/radarr/UI/Content/_output/UI/Content]
+19-1-6 22:14:30.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/activity.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/activity.css.map]
+19-1-6 22:14:30.2|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/activity.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/addMovies.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/addMovies.css.map]
+19-1-6 22:14:30.2|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/addMovies.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/bootstrap.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/bootstrap.css.map]
+19-1-6 22:14:30.2|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/bootstrap.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/bootstrap.toggle-switch.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/bootstrap.toggle-switch.css.map]
+19-1-6 22:14:30.2|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/bootstrap.toggle-switch.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/calendar.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/calendar.css.map]
+19-1-6 22:14:30.2|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/calendar.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/cells.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/cells.css.map]
+19-1-6 22:14:30.2|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/cells.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/fullcalendar.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/fullcalendar.css.map]
+19-1-6 22:14:30.2|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/fullcalendar.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/info.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/info.css.map]
+19-1-6 22:14:30.3|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/info.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/logs.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/logs.css.map]
+19-1-6 22:14:30.3|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/logs.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/manualimport.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/manualimport.css.map]
+19-1-6 22:14:30.3|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/manualimport.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/messenger.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/messenger.css.map]
+19-1-6 22:14:30.3|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/messenger.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/messenger.flat.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/messenger.flat.css.map]
+19-1-6 22:14:30.3|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/messenger.flat.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/movies.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/movies.css.map]
+19-1-6 22:14:30.3|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/movies.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/overrides.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/overrides.css.map]
+19-1-6 22:14:30.3|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/overrides.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/settings.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/settings.css.map]
+19-1-6 22:14:30.3|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/settings.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/theme.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/theme.css.map]
+19-1-6 22:14:30.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/theme.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/_output/UI/Content/update.css.map] > [/opt/radarr/UI/Content/_output/UI/Content/update.css.map]
+19-1-6 22:14:30.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/_output/UI/Content/update.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/activity.css] > [/opt/radarr/UI/Content/activity.css]
+19-1-6 22:14:30.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/activity.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/addMovies.css] > [/opt/radarr/UI/Content/addMovies.css]
+19-1-6 22:14:30.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/addMovies.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/bootstrap.css] > [/opt/radarr/UI/Content/bootstrap.css]
+19-1-6 22:14:30.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/bootstrap.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/bootstrap.toggle-switch.css] > [/opt/radarr/UI/Content/bootstrap.toggle-switch.css]
+19-1-6 22:14:30.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/bootstrap.toggle-switch.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/calendar.css] > [/opt/radarr/UI/Content/calendar.css]
+19-1-6 22:14:30.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/calendar.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/cells.css] > [/opt/radarr/UI/Content/cells.css]
+19-1-6 22:14:30.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/cells.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/fullcalendar.css] > [/opt/radarr/UI/Content/fullcalendar.css]
+19-1-6 22:14:30.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/fullcalendar.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.4|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/info.css] > [/opt/radarr/UI/Content/info.css]
+19-1-6 22:14:30.4|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/info.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/logs.css] > [/opt/radarr/UI/Content/logs.css]
+19-1-6 22:14:30.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/logs.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/manualimport.css] > [/opt/radarr/UI/Content/manualimport.css]
+19-1-6 22:14:30.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/manualimport.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/messenger.css] > [/opt/radarr/UI/Content/messenger.css]
+19-1-6 22:14:30.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/messenger.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/messenger.flat.css] > [/opt/radarr/UI/Content/messenger.flat.css]
+19-1-6 22:14:30.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/messenger.flat.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/movies.css] > [/opt/radarr/UI/Content/movies.css]
+19-1-6 22:14:30.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/movies.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/overrides.css] > [/opt/radarr/UI/Content/overrides.css]
+19-1-6 22:14:30.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/overrides.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/robots.txt] > [/opt/radarr/UI/Content/robots.txt]
+19-1-6 22:14:30.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/robots.txt for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/settings.css] > [/opt/radarr/UI/Content/settings.css]
+19-1-6 22:14:30.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/settings.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/theme.css] > [/opt/radarr/UI/Content/theme.css]
+19-1-6 22:14:30.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/theme.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.5|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/update.css] > [/opt/radarr/UI/Content/update.css]
+19-1-6 22:14:30.5|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/update.css for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/Content/zero.clipboard.swf] > [/opt/radarr/UI/Content/zero.clipboard.swf]
+19-1-6 22:14:30.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/Content/zero.clipboard.swf for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/handlebars.runtime.js] > [/opt/radarr/UI/handlebars.runtime.js]
+19-1-6 22:14:30.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/handlebars.runtime.js for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/index.html] > [/opt/radarr/UI/index.html]
+19-1-6 22:14:30.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/index.html for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/login.html] > [/opt/radarr/UI/login.html]
+19-1-6 22:14:30.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/login.html for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/main.js] > [/opt/radarr/UI/main.js]
+19-1-6 22:14:30.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/main.js for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/main.map] > [/opt/radarr/UI/main.map]
+19-1-6 22:14:30.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/main.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/oauth.html] > [/opt/radarr/UI/oauth.html]
+19-1-6 22:14:30.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/oauth.html for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/polyfills.js] > [/opt/radarr/UI/polyfills.js]
+19-1-6 22:14:30.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/polyfills.js for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/templates.js] > [/opt/radarr/UI/templates.js]
+19-1-6 22:14:30.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/templates.js for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.6|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/vendor.js] > [/opt/radarr/UI/vendor.js]
+19-1-6 22:14:30.6|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/vendor.js for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/UI/vendor.map] > [/opt/radarr/UI/vendor.map]
+19-1-6 22:14:30.7|Trace|SymbLinkResolver|Checking path /opt/radarr/UI/vendor.map for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/CookComputing.XmlRpcV2.dll] > [/opt/radarr/CookComputing.XmlRpcV2.dll]
+19-1-6 22:14:30.7|Trace|SymbLinkResolver|Checking path /opt/radarr/CookComputing.XmlRpcV2.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/CurlSharp.dll] > [/opt/radarr/CurlSharp.dll]
+19-1-6 22:14:30.7|Trace|SymbLinkResolver|Checking path /opt/radarr/CurlSharp.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/CurlSharp.dll.config] > [/opt/radarr/CurlSharp.dll.config]
+19-1-6 22:14:30.7|Trace|SymbLinkResolver|Checking path /opt/radarr/CurlSharp.dll.config for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/CurlSharp.dll.mdb] > [/opt/radarr/CurlSharp.dll.mdb]
+19-1-6 22:14:30.7|Trace|SymbLinkResolver|Checking path /opt/radarr/CurlSharp.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/FluentMigrator.Runner.dll] > [/opt/radarr/FluentMigrator.Runner.dll]
+19-1-6 22:14:30.7|Trace|SymbLinkResolver|Checking path /opt/radarr/FluentMigrator.Runner.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/FluentMigrator.Runner.dll.mdb] > [/opt/radarr/FluentMigrator.Runner.dll.mdb]
+19-1-6 22:14:30.7|Trace|SymbLinkResolver|Checking path /opt/radarr/FluentMigrator.Runner.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/FluentMigrator.dll] > [/opt/radarr/FluentMigrator.dll]
+19-1-6 22:14:30.7|Trace|SymbLinkResolver|Checking path /opt/radarr/FluentMigrator.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/FluentMigrator.dll.mdb] > [/opt/radarr/FluentMigrator.dll.mdb]
+19-1-6 22:14:30.7|Trace|SymbLinkResolver|Checking path /opt/radarr/FluentMigrator.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.7|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/FluentValidation.dll] > [/opt/radarr/FluentValidation.dll]
+19-1-6 22:14:30.7|Trace|SymbLinkResolver|Checking path /opt/radarr/FluentValidation.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/FluentValidation.dll.mdb] > [/opt/radarr/FluentValidation.dll.mdb]
+19-1-6 22:14:30.8|Trace|SymbLinkResolver|Checking path /opt/radarr/FluentValidation.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Growl.Connector.dll] > [/opt/radarr/Growl.Connector.dll]
+19-1-6 22:14:30.8|Trace|SymbLinkResolver|Checking path /opt/radarr/Growl.Connector.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Growl.CoreLibrary.dll] > [/opt/radarr/Growl.CoreLibrary.dll]
+19-1-6 22:14:30.8|Trace|SymbLinkResolver|Checking path /opt/radarr/Growl.CoreLibrary.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/ICSharpCode.SharpZipLib.dll] > [/opt/radarr/ICSharpCode.SharpZipLib.dll]
+19-1-6 22:14:30.8|Trace|SymbLinkResolver|Checking path /opt/radarr/ICSharpCode.SharpZipLib.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Ical.Net.Collections.dll] > [/opt/radarr/Ical.Net.Collections.dll]
+19-1-6 22:14:30.8|Trace|SymbLinkResolver|Checking path /opt/radarr/Ical.Net.Collections.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Ical.Net.Collections.dll.mdb] > [/opt/radarr/Ical.Net.Collections.dll.mdb]
+19-1-6 22:14:30.8|Trace|SymbLinkResolver|Checking path /opt/radarr/Ical.Net.Collections.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Ical.Net.dll] > [/opt/radarr/Ical.Net.dll]
+19-1-6 22:14:30.8|Trace|SymbLinkResolver|Checking path /opt/radarr/Ical.Net.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Ical.Net.dll.mdb] > [/opt/radarr/Ical.Net.dll.mdb]
+19-1-6 22:14:30.8|Trace|SymbLinkResolver|Checking path /opt/radarr/Ical.Net.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/ImageResizer.dll] > [/opt/radarr/ImageResizer.dll]
+19-1-6 22:14:30.8|Trace|SymbLinkResolver|Checking path /opt/radarr/ImageResizer.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.8|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Interop.NetFwTypeLib.dll] > [/opt/radarr/Interop.NetFwTypeLib.dll]
+19-1-6 22:14:30.8|Trace|SymbLinkResolver|Checking path /opt/radarr/Interop.NetFwTypeLib.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/LogentriesCore.dll] > [/opt/radarr/LogentriesCore.dll]
+19-1-6 22:14:30.9|Trace|SymbLinkResolver|Checking path /opt/radarr/LogentriesCore.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/LogentriesCore.dll.mdb] > [/opt/radarr/LogentriesCore.dll.mdb]
+19-1-6 22:14:30.9|Trace|SymbLinkResolver|Checking path /opt/radarr/LogentriesCore.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/LogentriesNLog.dll] > [/opt/radarr/LogentriesNLog.dll]
+19-1-6 22:14:30.9|Trace|SymbLinkResolver|Checking path /opt/radarr/LogentriesNLog.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/LogentriesNLog.dll.mdb] > [/opt/radarr/LogentriesNLog.dll.mdb]
+19-1-6 22:14:30.9|Trace|SymbLinkResolver|Checking path /opt/radarr/LogentriesNLog.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Marr.Data.dll] > [/opt/radarr/Marr.Data.dll]
+19-1-6 22:14:30.9|Trace|SymbLinkResolver|Checking path /opt/radarr/Marr.Data.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Marr.Data.dll.mdb] > [/opt/radarr/Marr.Data.dll.mdb]
+19-1-6 22:14:30.9|Trace|SymbLinkResolver|Checking path /opt/radarr/Marr.Data.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Microsoft.AspNet.SignalR.Core.dll] > [/opt/radarr/Microsoft.AspNet.SignalR.Core.dll]
+19-1-6 22:14:30.9|Trace|SymbLinkResolver|Checking path /opt/radarr/Microsoft.AspNet.SignalR.Core.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Microsoft.AspNet.SignalR.Core.dll.mdb] > [/opt/radarr/Microsoft.AspNet.SignalR.Core.dll.mdb]
+19-1-6 22:14:30.9|Trace|SymbLinkResolver|Checking path /opt/radarr/Microsoft.AspNet.SignalR.Core.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Microsoft.AspNet.SignalR.Owin.dll] > [/opt/radarr/Microsoft.AspNet.SignalR.Owin.dll]
+19-1-6 22:14:30.9|Trace|SymbLinkResolver|Checking path /opt/radarr/Microsoft.AspNet.SignalR.Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Microsoft.AspNet.SignalR.Owin.dll.mdb] > [/opt/radarr/Microsoft.AspNet.SignalR.Owin.dll.mdb]
+19-1-6 22:14:30.9|Trace|SymbLinkResolver|Checking path /opt/radarr/Microsoft.AspNet.SignalR.Owin.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:30.9|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Microsoft.Owin.Host.HttpListener.dll] > [/opt/radarr/Microsoft.Owin.Host.HttpListener.dll]
+19-1-6 22:14:31.0|Trace|SymbLinkResolver|Checking path /opt/radarr/Microsoft.Owin.Host.HttpListener.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Microsoft.Owin.Hosting.dll] > [/opt/radarr/Microsoft.Owin.Hosting.dll]
+19-1-6 22:14:31.0|Trace|SymbLinkResolver|Checking path /opt/radarr/Microsoft.Owin.Hosting.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Microsoft.Owin.dll] > [/opt/radarr/Microsoft.Owin.dll]
+19-1-6 22:14:31.0|Trace|SymbLinkResolver|Checking path /opt/radarr/Microsoft.Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/MonoTorrent.dll] > [/opt/radarr/MonoTorrent.dll]
+19-1-6 22:14:31.0|Trace|SymbLinkResolver|Checking path /opt/radarr/MonoTorrent.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/MonoTorrent.dll.mdb] > [/opt/radarr/MonoTorrent.dll.mdb]
+19-1-6 22:14:31.0|Trace|SymbLinkResolver|Checking path /opt/radarr/MonoTorrent.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NLog.dll] > [/opt/radarr/NLog.dll]
+19-1-6 22:14:31.0|Trace|SymbLinkResolver|Checking path /opt/radarr/NLog.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Nancy.Authentication.Basic.dll] > [/opt/radarr/Nancy.Authentication.Basic.dll]
+19-1-6 22:14:31.0|Trace|SymbLinkResolver|Checking path /opt/radarr/Nancy.Authentication.Basic.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Nancy.Authentication.Forms.dll] > [/opt/radarr/Nancy.Authentication.Forms.dll]
+19-1-6 22:14:31.0|Trace|SymbLinkResolver|Checking path /opt/radarr/Nancy.Authentication.Forms.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Nancy.Owin.dll] > [/opt/radarr/Nancy.Owin.dll]
+19-1-6 22:14:31.0|Trace|SymbLinkResolver|Checking path /opt/radarr/Nancy.Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Nancy.dll] > [/opt/radarr/Nancy.dll]
+19-1-6 22:14:31.0|Trace|SymbLinkResolver|Checking path /opt/radarr/Nancy.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.0|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Newtonsoft.Json.dll] > [/opt/radarr/Newtonsoft.Json.dll]
+19-1-6 22:14:31.1|Trace|SymbLinkResolver|Checking path /opt/radarr/Newtonsoft.Json.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NodaTime.dll] > [/opt/radarr/NodaTime.dll]
+19-1-6 22:14:31.1|Trace|SymbLinkResolver|Checking path /opt/radarr/NodaTime.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NzbDrone.Api.dll] > [/opt/radarr/NzbDrone.Api.dll]
+19-1-6 22:14:31.1|Trace|SymbLinkResolver|Checking path /opt/radarr/NzbDrone.Api.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NzbDrone.Api.dll.mdb] > [/opt/radarr/NzbDrone.Api.dll.mdb]
+19-1-6 22:14:31.1|Trace|SymbLinkResolver|Checking path /opt/radarr/NzbDrone.Api.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NzbDrone.Common.dll] > [/opt/radarr/NzbDrone.Common.dll]
+19-1-6 22:14:31.1|Trace|SymbLinkResolver|Checking path /opt/radarr/NzbDrone.Common.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NzbDrone.Common.dll.mdb] > [/opt/radarr/NzbDrone.Common.dll.mdb]
+19-1-6 22:14:31.1|Trace|SymbLinkResolver|Checking path /opt/radarr/NzbDrone.Common.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NzbDrone.Core.dll] > [/opt/radarr/NzbDrone.Core.dll]
+19-1-6 22:14:31.1|Trace|SymbLinkResolver|Checking path /opt/radarr/NzbDrone.Core.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NzbDrone.Core.dll.config] > [/opt/radarr/NzbDrone.Core.dll.config]
+19-1-6 22:14:31.1|Trace|SymbLinkResolver|Checking path /opt/radarr/NzbDrone.Core.dll.config for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NzbDrone.Core.dll.mdb] > [/opt/radarr/NzbDrone.Core.dll.mdb]
+19-1-6 22:14:31.1|Trace|SymbLinkResolver|Checking path /opt/radarr/NzbDrone.Core.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.1|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NzbDrone.Mono.dll] > [/opt/radarr/NzbDrone.Mono.dll]
+19-1-6 22:14:31.1|Trace|SymbLinkResolver|Checking path /opt/radarr/NzbDrone.Mono.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NzbDrone.Mono.dll.mdb] > [/opt/radarr/NzbDrone.Mono.dll.mdb]
+19-1-6 22:14:31.2|Trace|SymbLinkResolver|Checking path /opt/radarr/NzbDrone.Mono.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NzbDrone.SignalR.dll] > [/opt/radarr/NzbDrone.SignalR.dll]
+19-1-6 22:14:31.2|Trace|SymbLinkResolver|Checking path /opt/radarr/NzbDrone.SignalR.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/NzbDrone.SignalR.dll.mdb] > [/opt/radarr/NzbDrone.SignalR.dll.mdb]
+19-1-6 22:14:31.2|Trace|SymbLinkResolver|Checking path /opt/radarr/NzbDrone.SignalR.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/OAuth.dll] > [/opt/radarr/OAuth.dll]
+19-1-6 22:14:31.2|Trace|SymbLinkResolver|Checking path /opt/radarr/OAuth.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/OAuth.dll.mdb] > [/opt/radarr/OAuth.dll.mdb]
+19-1-6 22:14:31.2|Trace|SymbLinkResolver|Checking path /opt/radarr/OAuth.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Org.Mentalis.dll] > [/opt/radarr/Org.Mentalis.dll]
+19-1-6 22:14:31.2|Trace|SymbLinkResolver|Checking path /opt/radarr/Org.Mentalis.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Owin.dll] > [/opt/radarr/Owin.dll]
+19-1-6 22:14:31.2|Trace|SymbLinkResolver|Checking path /opt/radarr/Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Prowlin.dll] > [/opt/radarr/Prowlin.dll]
+19-1-6 22:14:31.2|Trace|SymbLinkResolver|Checking path /opt/radarr/Prowlin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Radarr.Host.dll] > [/opt/radarr/Radarr.Host.dll]
+19-1-6 22:14:31.2|Trace|SymbLinkResolver|Checking path /opt/radarr/Radarr.Host.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Radarr.Host.dll.mdb] > [/opt/radarr/Radarr.Host.dll.mdb]
+19-1-6 22:14:31.2|Trace|SymbLinkResolver|Checking path /opt/radarr/Radarr.Host.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.2|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Radarr.exe] > [/opt/radarr/Radarr.exe]
+19-1-6 22:14:31.3|Trace|SymbLinkResolver|Checking path /opt/radarr/Radarr.exe for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Radarr.exe.config] > [/opt/radarr/Radarr.exe.config]
+19-1-6 22:14:31.3|Trace|SymbLinkResolver|Checking path /opt/radarr/Radarr.exe.config for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/Radarr.exe.mdb] > [/opt/radarr/Radarr.exe.mdb]
+19-1-6 22:14:31.3|Trace|SymbLinkResolver|Checking path /opt/radarr/Radarr.exe.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/RestSharp.dll] > [/opt/radarr/RestSharp.dll]
+19-1-6 22:14:31.3|Trace|SymbLinkResolver|Checking path /opt/radarr/RestSharp.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/SocksWebProxy.dll] > [/opt/radarr/SocksWebProxy.dll]
+19-1-6 22:14:31.3|Trace|SymbLinkResolver|Checking path /opt/radarr/SocksWebProxy.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/System.Data.SQLite.dll] > [/opt/radarr/System.Data.SQLite.dll]
+19-1-6 22:14:31.3|Trace|SymbLinkResolver|Checking path /opt/radarr/System.Data.SQLite.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/System.Data.SQLite.xml] > [/opt/radarr/System.Data.SQLite.xml]
+19-1-6 22:14:31.3|Trace|SymbLinkResolver|Checking path /opt/radarr/System.Data.SQLite.xml for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/System.ValueTuple.dll] > [/opt/radarr/System.ValueTuple.dll]
+19-1-6 22:14:31.3|Trace|SymbLinkResolver|Checking path /opt/radarr/System.ValueTuple.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/antlr.runtime.dll] > [/opt/radarr/antlr.runtime.dll]
+19-1-6 22:14:31.3|Trace|SymbLinkResolver|Checking path /opt/radarr/antlr.runtime.dll for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.3|Debug|DiskTransferService|Copy [/tmp/radarr_update/Radarr/antlr.runtime.dll.mdb] > [/opt/radarr/antlr.runtime.dll.mdb]
+19-1-6 22:14:31.3|Trace|SymbLinkResolver|Checking path /opt/radarr/antlr.runtime.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+19-1-6 22:14:31.3|Info|TerminateNzbDrone|Killing all running processes
+19-1-6 22:14:31.5|Debug|ProcessProvider|Found 0 processes with the name: Radarr.Console
+19-1-6 22:14:31.5|Debug|ProcessProvider|Found 0 processes to kill
+19-1-6 22:14:31.6|Debug|ProcessProvider|Found 0 processes with the name: Radarr
+19-1-6 22:14:31.6|Debug|ProcessProvider|Found 0 processes to kill
+19-1-6 22:14:31.6|Info|ProcessProvider|[211]: Killing process
+19-1-6 22:14:31.6|Info|ProcessProvider|[211]: Waiting for exit
+19-1-6 22:14:31.6|Info|ProcessProvider|[211]: Process terminated successfully
+19-1-6 22:14:31.6|Info|InstallUpdateService|Waiting for external auto-restart.
+19-1-6 22:14:32.7|Debug|ProcessProvider|Found 1 processes with the name: Radarr
+19-1-6 22:14:32.7|Debug|ProcessProvider| - [291] mono-sgen
+19-1-6 22:14:32.7|Info|InstallUpdateService|Radarr was restarted by external process.
+19-1-6 22:14:32.7|Debug|ProcessProvider|Found 1 processes with the name: Radarr
+19-1-6 22:14:32.7|Debug|ProcessProvider| - [291] mono-sgen
+19-1-6 22:14:32.7|Info|UpdateApp|Update completed successfully

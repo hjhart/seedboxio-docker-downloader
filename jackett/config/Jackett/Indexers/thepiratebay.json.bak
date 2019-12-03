@@ -9,12 +9,23 @@
     "id": "cookieheader",
     "type": "hiddendata",
     "name": "CookieHeader",
-    "value": "__cfduid=dc526a64d6b4596648951d2a53b05b0bb1511773011; PHPSESSID=b0fc4ade7022409a9a8440d789017b7d; language=en_EN"
+    "value": "__cfduid=de809651e18fdd660c75815b04eb347bb1546065153; PHPSESSID=bd8be6ab8ca5e3f45ad10dcf70c15fbc; language=en_EN"
   },
   {
     "id": "lasterror",
     "type": "hiddendata",
     "name": "LastError",
-    "value": "Found no results while trying to browse this tracker"
+    "value": ""
+  },
+  {
+    "id": "orderresults",
+    "type": "inputselect",
+    "name": "Order results",
+    "value": "99",
+    "options": {
+      "99": "Default",
+      "8": "Seeders",
+      "3": "Time"
+    }
   }
 ]
