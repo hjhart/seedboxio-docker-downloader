@@ -7,3 +7,5 @@ jackett/config/Jackett/log.txt
 sonarr/config/MediaCover/
 updater.txt
 Backups
+jackett/config/Jackett/DataProtection/
+jackett/config/Jackett/Indexers/
