@@ -78,3 +78,15 @@ TODO:
 * Figure out how to configure Download Clients automatically and check it into version control
 * (Essentially figure out how to remove the "Configure Radarr / Sonarr" manual steps)
 * Add download clients automatically
+*
+*
+
+## Updating to newest versions
+
+```
+docker-compose down
+docker-compose pull sonarr radarr jackett
+docker-compose up -d
+```
+
+
