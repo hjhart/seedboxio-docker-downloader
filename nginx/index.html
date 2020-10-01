@@ -1,19 +1,54 @@
-Hi there! Welcome to your server!
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<div class="flex flex-col py-4 bg-gray-800 min-h-screen">
+<div class="max-w-md self-center">
 
-<h2>Local</h2>
-
-<a href="/sonarr">TV Shows</a>
-</br>
-<a href="/radarr">Movies</a>
-</br>
-<a href="/UI/Dashboard" onmouseover="javascript:event.target.port=9117">jackett</a>
-</br>
-<a href="/web/index.html" onmouseover="javascript:event.target.port=32400">plex</a>
-
-<h2>Seedbox.io</h2>
-
-<a href="https://psb18653.seedbox.io/resilio">Resilio Sync</a>
-</br>
-<a href="https://psb18653.seedbox.io/">ruTorrent</a>
-</br>
-<a href="https://psb18653.seedbox.io/dav">Web DAV</a>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="text-center text-white bg-black hover:bg-gray-900 rounded-lg p-8">
+        <a href="/sonarr/addseries" >
+          <i class="fas fa-film text-6xl"></i><br/>
+          <span class="text-2xl">TV Shows</span>
+        </a>
+      </div>
+      <div class="text-center text-white bg-black hover:bg-gray-900 rounded-lg p-8">
+        <a href="/radarr/addmovies">
+          <i class="fas fa-tv-retro text-6xl"></i><br/>
+          <span class="text-2xl">Movies</span>
+        </a>
+      </div>
+      <div class="text-center text-white bg-black hover:bg-gray-900 rounded-lg p-8">
+        <a href="http://home.hjhart.com:9117/UI/Dashboard">
+          <i class="fas fa-user-secret text-6xl"></i><br/>
+          <span class="text-2xl">Jackett</span> 
+        </a>
+      </div>
+      <div class="text-center text-white bg-black hover:bg-gray-900 rounded-lg p-8">
+        <a href="http://home.hjhart.com:32400/web/index.html">
+          <i class="fas fa-theater-masks text-6xl"></i><br/>
+          <span class="text-2xl">Plex</span>
+        </a>
+      </div>
+    </div>
+    <h2 class="mt-8 text-white">Seedbox.io</h2>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="text-center text-white bg-black hover:bg-gray-900 rounded-lg p-8">
+        <a href="https://psb18653.seedbox.io/resilio">
+          <i class="fas fa-sync text-6xl"></i><br/>
+          <span class="text-2xl">Resilio Sync</span>
+        </a>
+      </div>
+      <div class="text-center text-white bg-black hover:bg-gray-900 rounded-lg p-8">
+        <a href="https://psb18653.seedbox.io/">
+          <i class="fas fa-kaaba text-6xl"></i><br/>
+          <span class="text-2xl">ruTorrent</span>
+        </a>
+      </div>
+      <div class="text-center text-white bg-black hover:bg-gray-900 rounded-lg p-8">
+        <a href="https://psb18653.seedbox.io/resilio">
+          <i class="fas fa-server text-6xl"></i><br/>
+          <span class="text-2xl">Web DAV</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
